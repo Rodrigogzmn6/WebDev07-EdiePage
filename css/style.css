@@ -76,7 +76,8 @@ a:visited, a:link {
         transform-origin: bottom right;
     }
 
-    .menu-bar ul {
+    .menu-bar > ul {
+        align-items: center;
         flex-direction: column;
         gap: 3vw;
     }
@@ -110,7 +111,7 @@ a:visited, a:link {
         font-weight: 800;
     }
 
-    .menu-bar ul {
+    .menu-bar > ul {
         display: flex;
         list-style: none;
     }
@@ -395,5 +396,29 @@ a:visited, a:link {
     }
 }
 
+@media screen and (min-width: 768px) {
+    /*INTRODUCTION*/
+    .contact-form form > * {
+        font-size: var(--sm-12-px);
+    }
 
-/*405 lineas*/
+    /*SERVICES*/
+    .service i {
+        font-size: var(--sm-14-px);
+    }
+
+    /*DESIGN*/
+    #designs h2 {
+        margin: 0 8vw 13vw 8vw;
+    }
+    
+    /*FOOTER*/
+    #social-network img {
+        margin-right: 1.5rem;
+        width: 6.4vw;
+    }
+}
+
+@media screen and (min-width: 1023px) {
+
+}
